@@ -7,9 +7,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
 import SlydeScreen from '../screens/SlydeScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import CartScreen from '../screens/CartScreen';
+import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 const StackNavigator = () => {
     const Stack = createNativeStackNavigator();
@@ -37,7 +38,7 @@ const StackNavigator = () => {
                     name="Slyde"
                     component={SlydeScreen}
                     options={{
-                        tabBarLabel: "SlydeScreen",
+                        tabBarLabel: "Slyde",
                         tabBarLabelStyle: { color: "#FF69B4" },
                         headerShown: false,
                         tabBarIcon: ({ focused }) =>
@@ -50,18 +51,18 @@ const StackNavigator = () => {
                     }}
                 />
                 <Tab.Screen
-                    name="Profile"
-                    component={ProfileScreen}
+                    name="Cart"
+                    component={CartScreen}
                     options={{
-                        tabBarLabel: "Profile",
+                        tabBarLabel: "Cart",
                         tabBarLabelStyle: { color: "#FF69B4" },
                         headerShown: false,
                         tabBarIcon: ({ focused }) =>
                             focused ? (
-                                <Ionicons name="person-circle" size={24} color="#FF69B4" />
+                                <FontAwesome5 name="shopping-cart" size={24} color="hotpink" />
                             )
                                 : (
-                                    <Ionicons name="person-circle-outline" size={24} color="black" />
+                                    <AntDesign name="shoppingcart" size={24} color="black" />
                                 )
                     }}
                 />

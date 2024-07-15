@@ -58,21 +58,21 @@ const Cards = ({item,isFirst,swipe,...rest}) => {
         <Text style={{position:'absolute',
             bottom:100,
             left:20,
-            color:'white',
+            color:'black',
             fontSize:30}}>
           {item.name}  
         </Text>
         <Text style={{position:'absolute',
             bottom:80,
             left:20,
-            color:'white',
+            color:'black',
             fontSize:20}}>
           {item.price}  
         </Text>
         <Text style={{position:'absolute',
             bottom:35,
             left:20,
-            color:'white',
+            color:'black',
             fontSize:15}}>
           {item.description}  
         </Text>
